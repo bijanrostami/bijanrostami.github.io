@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my website">
-    <title>My Website</title>
+    <meta name="description" content="Welcome to Hossein Bijanrostami's personal website">
+    <title>Hossein Bijanrostami</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
     <style>
         * {
             margin: 0;
@@ -25,8 +26,8 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: #fff;
-            border-bottom: 1px solid #e8e8e8;
+            background: #cbccce;
+            border-bottom: 1px solid #000000;
             z-index: 1000;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
@@ -80,7 +81,7 @@
             display: flex;
             max-width: 1280px;
             margin: 0 auto;
-            padding-top: 63px;
+            padding-top: 10px;
         }
         
         /* Sidebar */
@@ -173,12 +174,15 @@
             color: #666;
         }
         
+        /* Sidebar info toggle */
+        .author__toggle { display: none; }
+        
         /* Main Content */
         .page {
             flex: 1;
             padding: 2rem 3rem;
             background: #fff;
-            margin-left: 280px;
+            margin-left: 28px;
         }
         
         .page__inner-wrap {
@@ -280,18 +284,25 @@
             .sidebar {
                 position: relative;
                 width: 100%;
+                /* margin: 0 auto; */
                 border-right: none;
                 border-bottom: 1px solid #e8e8e8;
             }
             
             .page {
                 margin-left: 0;
-                padding: 2rem 1.5rem;
+                padding: 4rem 1.5rem;
             }
             
             #main {
                 flex-direction: column;
             }
+            
+            /* Mobile: show toggle button, hide links until expanded */
+            .author__toggle { display: block; margin-bottom: 0.5rem; }
+            .sidebar .author__toggle { width: 30%; margin: 0 auto 0.5rem; display: block; }
+            .author__urls { display: none; }
+            .author__toggle[aria-expanded="true"] + .author__urls { display: block; }
         }
         
         @media (max-width: 768px) {
@@ -318,16 +329,16 @@
                 <nav class="greedy-nav">
                     <ul>
                         <li class="masthead__menu-item masthead__menu-item--lg">
-                            <a href="#home">My Website</a>
+                            <a href="#home">Hossein Bijanrostami</a>
                         </li>
                         <li class="masthead__menu-item">
-                            <a href="#about">About</a>
+                            <a href="#home">Research</a>
                         </li>
                         <li class="masthead__menu-item">
-                            <a href="#services">Services</a>
+                            <a href="#home">Teaching</a>
                         </li>
                         <li class="masthead__menu-item">
-                            <a href="#contact">Contact</a>
+                            <a href="#home">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -345,35 +356,44 @@
                 </div>
                 
                 <div class="author__content">
-                    <h3 class="author__name">Your Name</h3>
-                    <p class="author__bio">Your tagline or bio goes here</p>
+                    <h3 class="author__name">Hossein Bijanrostami</h3>
+                    <p class="author__bio">PhD Student at University of Toronto </p>
                 </div>
                 
                 <div class="author__urls-wrapper">
-                    <button class="btn btn--inverse">Follow</button>
-                    <ul class="author__urls">
+                    <button class="btn--inverse author__toggle" aria-expanded="false" aria-controls="contact-links">
+                        <i class="fas fa-fw fa-info-circle"></i> Info
+                    </button>
+                    <ul id="contact-links" class="author__urls">
                         <li>
                             <i class="fas fa-fw fa-location-dot"></i>
-                            Your City, Country
+                            Toronto, Canada
                         </li>
                         <li>
                             <i class="fas fa-fw fa-building-columns"></i>
-                            Your Organization
+                            University of Toronto
                         </li>
                         <li>
-                            <a href="mailto:your.email@example.com">
+                            <a href="mailto:hossein.bijanrostami@gmail.com">
                                 <i class="fas fa-fw fa-envelope"></i>
                                 Email
                             </a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/in/yourprofile">
+                            <a href="https://scholar.google.com/citations?user=YOUR_USER_ID">
+                                <i class="ai ai-fw ai-google-scholar"></i>
+                                Google Scholar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/hossein-bijanrostami-a2a200147">
                                 <i class="fab fa-fw fa-linkedin"></i>
                                 LinkedIn
                             </a>
                         </li>
+
                         <li>
-                            <a href="https://github.com/yourprofile">
+                            <a href="https://github.com/bijanrostami">
                                 <i class="fab fa-fw fa-github"></i>
                                 GitHub
                             </a>
@@ -386,48 +406,56 @@
         <!-- Main Page Content -->
         <article class="page">
             <div class="page__inner-wrap">
-                <header>
+                <!-- <header>
                     <h1 class="page__title">Welcome</h1>
-                </header>
-                
+                </header> -->
                 <section class="page__content">
-                    <section id="home">
-                        <p>
-                            This is the home section of the website. Welcome to the best website ever! 
-                            Here you'll find information about our services, background, and ways to get in touch.
-                        </p>
-                    </section>
-                    
                     <section id="about">
                         <h2>About</h2>
                         <p>
-                            Learn more about us here. We are dedicated to providing excellent services 
-                            and creating meaningful connections with our audience. Our mission is to 
-                            deliver quality content and solutions that make a difference.
+                            I am a PhD student in the Department of Electrical & Computer Engineering at the <a href="https://www.utoronto.ca/">University of Toronto</a>, working in the Communications and Networking Group under the supervision of <a href="https://www.ece.utoronto.ca/people/sousa-e-s/">Prof. Elvino S. Sousa</a>. I received both my Bachelor’s and Master’s degrees in Electrical Engineering from the <a href="https://ut.ac.ir/en">University of Tehran</a>, where my graduate studies focused on communication networks. My research lies at the intersection of machine learning and communication systems, with a strong emphasis on learning-driven wireless and IoT networks. I actively work on deep learning and reinforcement learning–based approaches for next-generation communication technologies, including variational autoencoders (VAEs), transformer models, and self-supervised learning for semantic representation, resource allocation, and task-oriented communication.
                         </p>
                     </section>
-                    
-                    <section id="services">
-                        <h2>Services</h2>
-                        <p>
-                            Check out our comprehensive range of services designed to meet your needs:
-                        </p>
-                        <h4>Web Development</h4>
-                        <p>Creating modern, responsive websites tailored to your requirements.</p>
-                        
-                        <h4>Consulting</h4>
-                        <p>Expert advice and guidance to help you achieve your goals.</p>
-                        
-                        <h4>Support</h4>
-                        <p>Dedicated customer support to ensure your satisfaction.</p>
+                    <section id="news">
+                        <h2>News</h2>
+                        <p><strong>[Jan '26]:</strong> Preparing a new manuscript on efficient modeling techniques.</p>
+                        <p><strong>[Dec '25]:</strong> Our paper entitled as <a href="https://www.itu.int/dms_pub/itu-s/opb/jnl/S-JNL-VOL6.ISSUE4-2025-A29-PDF-E.pdf">"Enhancing multiuser scheduling in massive MIMO mobile channels"</a> was published in <em>ITU Journal on Future and Evolving Technologies</em>.</p>
+                        <p><strong>[Oct '24]:</strong> We won the "Optimal Multi-user scheduling in massive MIMO mobile channels" <a href="https://challenge.aiforgood.itu.int/match/matchitem/93">ITU Competetion</a>. </p>
                     </section>
-                    
-                    <section id="contact">
-                        <h2>Contact</h2>
-                        <p>
-                            Get in touch with us through any of the channels listed in the sidebar. 
-                            We'd love to hear from you and discuss how we can help with your needs.
-                        </p>
+                    <section id="interests">
+                        <h2>Research Interests</h2>
+                            <ul>
+                                <li>
+                                    <strong>Machine Learning for Communication Systems</strong><br>
+                                    Deep learning, reinforcement learning, variational inference, transformers, self-supervised and representation learning.
+                                </li>
+
+                                <li>
+                                    <strong>Wireless Communications</strong><br>
+                                    MIMO systems, interference management, ultra-dense networks, power control, user scheduling.
+                                </li>
+
+                                <li>
+                                    <strong>Information Theory</strong><br>
+                                    Information bottleneck, semantic communications, joint source–channel coding, task-oriented communication.
+                                </li>
+
+                                <li>
+                                    <strong>Statistical Signal Processing</strong><br>
+                                    Detection and estimation, MIMO detection, learning-based signal processing, high-dimensional inference.
+                                </li>
+
+                                <li>
+                                    <strong>Edge Intelligence and Distributed Inference</strong><br>
+                                    Edge computing, multi-user and multi-task inference, energy-efficient and scalable learning systems.
+                                </li>
+
+                                <li>
+                                    <strong>Cyber-Physical and Smart Grid Systems</strong><br>
+                                    Communication-aware control, IoT-enabled monitoring, data-driven optimization in power and energy networks.
+                                </li>
+                            </ul>
+
                     </section>
                 </section>
             </div>
@@ -437,18 +465,28 @@
     <!-- Footer -->
     <div class="page__footer">
         <footer>
-            <div class="page__footer-follow">
+            <!-- <div class="page__footer-follow">
                 <ul>
                     <li><strong>Follow:</strong></li>
                     <li>
                         <a href="#"><i class="fa fa-fw fa-rss-square"></i> Feed</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <div class="page__footer-copyright">
-                © 2026 My Website. All rights reserved.
+                © 2026 Hossein Bijanrostami. All rights reserved.
             </div>
         </footer>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('.author__toggle');
+        if (!toggle) return;
+        toggle.addEventListener('click', function () {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+        });
+    });
+    </script>
 </body>
 </html>
