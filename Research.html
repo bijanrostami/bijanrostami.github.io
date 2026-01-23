@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Hossein Bijanrostami's personal website">
+    <title>Hossein Bijanrostami</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Sticky Header -->
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav class="greedy-nav">
+                    <ul>
+                        <li class="masthead__menu-item masthead__menu-item--lg">
+                            <a href="index.html">Hossein Bijanrostami</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="research.html">Research</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="teaching.html">Teaching</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="CV.html">CV</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content Area -->
+    <div id="main" role="main">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div itemscope itemtype="http://schema.org/Person">
+                <div>
+                    <img src="assets/personal.jpeg" class="author__avatar" alt="Profile Picture">
+                </div>
+                
+                <div class="author__content">
+                    <h3 class="author__name">Hossein Bijanrostami</h3>
+                    <p class="author__bio">PhD Student at University of Toronto </p>
+                </div>
+                
+                <div class="author__urls-wrapper">
+                    <button class="btn--inverse author__toggle" aria-expanded="false" aria-controls="contact-links">
+                        <i class="fas fa-fw fa-info-circle"></i> Info
+                    </button>
+                    <ul id="contact-links" class="author__urls">
+                        <li>
+                            <i class="fas fa-fw fa-location-dot"></i>
+                            Toronto, Canada
+                        </li>
+                        <li>
+                            <i class="fas fa-fw fa-building-columns"></i>
+                            University of Toronto
+                        </li>
+                        <li>
+                            <a href="mailto:hossein.bijanrostami@gmail.com">
+                                <i class="fas fa-fw fa-envelope"></i>
+                                Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scholar.google.com/citations?user=YOUR_USER_ID">
+                                <i class="ai ai-fw ai-google-scholar"></i>
+                                Google Scholar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/hossein-bijanrostami-a2a200147">
+                                <i class="fab fa-fw fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/bijanrostami">
+                                <i class="fab fa-fw fa-github"></i>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Page Content -->
+        <article class="page">
+            <div class="page__inner-wrap">
+                <header>
+                    <h3 class="page__title">Research Interests</h3>
+                </header>
+                <section class="page__content">
+                    <section id="Research">
+                        <h3>Artificial Intelligence in Communication Resource Management</h3>
+                        <p>My research explores the use of artificial intelligence and reinforcement learning for resource management in wireless communication systems. In particular, I have developed reinforcement learning–based frameworks, including Soft Actor-Critic (SAC), for joint user scheduling and power allocation in multi-user MIMO and ultra-dense wireless networks. These approaches enable adaptive interference management while optimizing spectral efficiency and fairness under dynamic channel conditions. I have also investigated deep transformer–based models for MIMO detection, leveraging attention mechanisms to capture spatial interference and channel dependencies, resulting in robust detection performance under correlated channels and imperfect channel state information.</p>                        
+                        <img src="assets/AI_pic.jpg" alt="Description of your image" style="display: block; width: 600px; height: 350px; margin: 20px auto;">
+                        <h3>Machine Learning–Based Semantic/Source and Channel Encoding</h3>
+                        <p>A major component of my work focuses on machine learning–driven semantic communication, where communication systems are optimized for downstream inference tasks rather than bit-level accuracy. I employ the Information Bottleneck principle together with Variational Autoencoders (VAEs) and self-supervised learning to design joint semantic/source and channel encoding and decoding frameworks. My research includes multi-task and multi-user semantic communication, fully end-to-end learned wireless systems, and modular, energy-efficient semantic encoders for edge inference networks, aiming to enable scalable, task-aware, and resource-efficient communication in distributed and edge-intelligent environments.</p>
+                        <img src="assets/ai_radio.jpg" alt="Description of your image" style="display: block; width: 600px; height: 350px;margin: 20px auto;">
+                        <h3>Machine Learning for Smart Grids</h3>
+                        <p>Modern smart grids increasingly rely on data-driven sensing, communication, and decision-making to ensure reliable, efficient, and resilient operation. Machine learning–based methods enable distributed state estimation, anomaly detection, and predictive control over communication-constrained power networks. As grid infrastructures become more decentralized and IoT-enabled, efficient information exchange between edge devices and control centers becomes critical, particularly under stringent latency, bandwidth, and reliability constraints. Learning-aware communication and semantic information extraction allow power system measurements to be transmitted in a task-oriented manner, reducing communication overhead while preserving decision-relevant information. This integration of wireless communications, edge intelligence, and machine learning supports scalable monitoring, adaptive control, and enhanced situational awareness in next-generation cyber-physical energy systems.</p>                   
+                    </section>
+
+                    
+                </section>
+            </div>
+        </article>
+    </div>
+    
+    <!-- Footer -->
+    <div class="page__footer">
+        <footer>
+            <!-- <div class="page__footer-follow">
+                <ul>
+                    <li><strong>Follow:</strong></li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-rss-square"></i> Feed</a>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="page__footer-copyright">
+                © 2026 Hossein Bijanrostami. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('.author__toggle');
+        if (!toggle) return;
+        toggle.addEventListener('click', function () {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+        });
+    });
+    </script>
+</body>
+</html>

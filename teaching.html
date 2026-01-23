@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teaching Experience - Hossein Bijanrostami">
+    <title>Teaching - Hossein Bijanrostami</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page__inner-wrap {
+            display: flex;
+            gap: 7rem;
+            align-items: flex-start;
+        }
+
+        .page__content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .page__content ul {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 1.5rem;
+        }
+
+        .page__content li {
+            margin-bottom: 0;
+        }
+
+        .page__content section {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .page__content h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .page__content h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .page__content h4 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .page__content h2:first-child {
+            margin-top: 30px;
+        }
+
+        .page__content p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        /* .page__summary {
+            width: 280px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 90px;
+            align-self: flex-start;
+            background: #f5f7fa;
+            border: 1px solid #e2e6ea;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        } */
+
+        .page__summary {
+            width: 330px;
+            position: fixed;
+            right: max(2rem, calc((100vw - 1200px) / 2));
+            top: 90px;
+            background: #f5f7fa;
+            border: 1px solid #e2e6ea;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+            z-index: 10;
+            font-size: 0.95rem;
+        }
+
+        .page__summary h2 {
+            margin: 0 0 0.5rem;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        .page__summary ol {
+            margin: 0;
+            padding-left: 0rem;
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        .page__summary a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .page__summary a:hover {
+            text-decoration: underline;
+        }
+
+        /* Prevent headings from hiding under the fixed header */
+        .page__content h2,
+        .page__content h3,
+        .page__content h4 {
+            scroll-margin-top: 140px; /* adjust until headings sit where you want */
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 60px; /* adjust until the heading lands where you want */
+        }
+        
+        /* Stack on smaller screens */
+        @media (max-width: 1024px) {
+            .page__inner-wrap {
+                flex-direction: column;
+                gap: 0rem;
+            }
+            .page__summary {
+                position: static;
+                width: 100%;
+                right: auto;
+                margin-bottom: 0rem;
+                margin-top: 0;
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav class="greedy-nav">
+                    <ul>
+                        <li class="masthead__menu-item masthead__menu-item--lg">
+                            <a href="index.html">Hossein Bijanrostami</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="research.html">Research</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="teaching.html">Teaching</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="CV.html">CV</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main" role="main">
+        <div class="sidebar">
+            <div itemscope itemtype="http://schema.org/Person">
+                <div>
+                    <img src="assets/personal.jpeg" class="author__avatar" alt="Profile Picture">
+                </div>
+                
+                <div class="author__content">
+                    <h3 class="author__name">Hossein Bijanrostami</h3>
+                    <p class="author__bio">PhD Student at University of Toronto</p>
+                </div>
+                
+                <div class="author__urls-wrapper">
+                    <button class="btn--inverse author__toggle" aria-expanded="false" aria-controls="contact-links">
+                        <i class="fas fa-fw fa-info-circle"></i> Info
+                    </button>
+                    <ul id="contact-links" class="author__urls">
+                        <li>
+                            <i class="fas fa-fw fa-location-dot"></i>
+                            Toronto, Canada
+                        </li>
+                        <li>
+                            <i class="fas fa-fw fa-building-columns"></i>
+                            University of Toronto
+                        </li>
+                        <li>
+                            <a href="mailto:hossein.bijanrostami@gmail.com">
+                                <i class="fas fa-fw fa-envelope"></i>
+                                Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scholar.google.com/citations?user=YOUR_USER_ID">
+                                <i class="ai ai-fw ai-google-scholar"></i>
+                                Google Scholar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/hossein-bijanrostami-a2a200147">
+                                <i class="fab fa-fw fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/bijanrostami">
+                                <i class="fab fa-fw fa-github"></i>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <article class="page">
+            <div class="page__inner-wrap">
+                <section class="page__content">
+                    <section id="teaching-assistant">
+                        <h2>Teaching Assistant</h2>
+                        <section id="ECE-dept">
+                            <h3>Dept. of Electrical and Computer Engineering</h3>
+                            <section id="EWinter-2026">
+                                <h4>Winter 2026</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                    <li>ECE472 - Engineering Economic Analysis & Entrepreneurship</li>
+                                    <li>ECE316 - Communication Systems</li>
+
+                                </ul>
+                            </section>
+                            <section id="EFall-2025">
+                                <h4>Fall 2025</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                    <li>ECE316 - Communication Systems</li>
+                                </ul>
+                            </section>
+                            <section id="EWinter-2025">
+                                <h4>Winter 2025</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                    <li>ECE316 - Communication Systems</li>
+                                    <li>ECE466 - Computer Networks II</li>
+                                </ul>
+                            </section>
+                            <section id="EFall-2024">
+                                <h4>Fall 2024</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                    <li>ECE461 - Internetworking</li>
+                                </ul>
+                            </section>
+                            <section id="EWinter-2024">
+                                <h4>Winter 2024</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                </ul>
+                            </section>
+                            <section id="EFall-2023">
+                                <h4>Fall 2023</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                    <li>ECE461 - Internetworking</li>
+                                </ul>
+                            </section>
+                            <section id="EFall-2022">
+                                <h4>Fall 2022</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                    <li>ECE461 - Internetworking</li>
+                                    <li>ECE1643 - SPC TPS CONTROL II</li>
+                                </ul>
+                            </section>
+                            <section id="ESummer-2022">
+                                <h4>Summer 2022</h4>
+                                <ul>
+                                    <li>ECE1643 - SPC TPS CONTROL II</li>
+                                </ul>
+                            </section>
+                            <section id="EWinter-2022">
+                                <h4>Winter 2022</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                </ul>
+                            </section>
+                            <section id="EFall-2021">
+                                <h4>Fall 2021</h4>
+                                <ul>
+                                    <li>ECE361 - Computer Networks I</li>
+                                </ul>
+                            </section>
+                        </section>
+                        <section id="CS-dept">
+                            <h3>Dept. of Computer Science</h3>
+                            <section id="CWinter-2026">
+                                <h4>Winter 2026</h4>
+                                <ul>
+                                    <li>CSC358 - Principles of Computer Network</li>
+                                    <li>CSC148 - Introduction to Computer Science</li>
+                                </ul>
+                            </section>
+                            <section id="CFall-2025">
+                                <h4>Fall 2025</h4>
+                                <ul>
+                                    <li>CSC458 - Computer Networking Systems</li>
+                                </ul>
+                            </section>
+                            <section id="CSummer-2025">
+                                <h4>Summer 2025</h4>
+                                <ul>
+                                    <li>CSCA48 - Introduction to Computer Science II</li>
+                                </ul>
+                            </section>
+                            <section id="CWinter-2025">
+                                <h4>Winter 2025</h4>
+                                <ul>
+                                    <li>CSC458 - Computer Networking Systems</li>
+                                    <li>CSC358 - Principles of Computer Network</li>
+                                </ul>
+                            </section>
+                            <section id="CFall-2024">
+                                <h4>Fall 2024</h4>
+                                <ul>
+                                    <li>CSC458 - Computer Networking Systems</li>
+                                </ul>
+                            </section>
+                            <section id="CSummer-2024">
+                                <h4>Summer 2024</h4>
+                                <ul>
+                                    <li>CSC148 - Introduction to Computer Science</li>
+                                </ul>
+                            </section>                            
+                            <section id="CWinter-2024">
+                                <h4>Winter 2024</h4>
+                                <ul>
+                                    <li>CSC358 - Principles of Computer Network</li>
+                                </ul>
+                            </section>
+                            <section id="CFall-2023">
+                                <h4>Fall 2023</h4>
+                                <ul>
+                                    <li>CSC458 - Computer Networking Systems</li>
+                                    <li>CSC108 - Introduction to Computer Programming</li>
+                                </ul>
+                            </section>
+                            <section id="CSummer-2023">
+                                <h4>Summer 2023</h4>
+                                <ul>
+                                    <li>CSCA48 - Introduction to Computer Science II</li>
+                                </ul>
+                            </section>
+                            <section id="CWinter-2023">
+                                <h4>Winter 2023</h4>
+                                <ul>
+                                    <li>CSC358 - Principles of Computer Networks</li>
+                                </ul>
+                            </section>
+                            <section id="CWinter-2022">
+                                <h4>Winter 2022</h4>
+                                <ul>
+                                    <li>CSC358 - Principles of Computer Network</li>
+                                    <li>CSC148 - Introduction to Computer Science</li>
+                                </ul>
+                            </section>
+                            <section id="CFall-2021">
+                                <h4>Fall 2021</h4>
+                                <ul>
+                                    <li>CSC458 - Computer Networking Systems</li>
+                                </ul>
+                            </section>
+                        </section>
+                        <section id="Other-dept">
+                            <h3>Other Departments</h3>
+                            <section id="OWinter-2026">
+                                <h4>Winter 2026</h4>
+                                <ul>
+                                    <li>MIE376 - Mathematical Programming (Optimization)</li>
+                                </ul>
+                            </section>
+                            <section id="OFall-2025">
+                                <h4>Fall 2025</h4>
+                                <ul>
+                                    <li>PHY131 - Introduction to Physics I</li>
+                                </ul>
+                            </section>
+                            <section id="OSummer-2025">
+                                <h4>Summer 2025</h4>
+                                <ul>
+                                    <li>MATA34 - Calculus for Management</li>
+                                </ul>
+                            </section>
+                            <section id="OWinter-2025">
+                                <h4>Winter 2025</h4>
+                                <ul>
+                                    <li>PHY131 - Introduction to Physics I</li>
+                                </ul>
+                            </section>
+                            <section id="OFall-2024">
+                                <h4>Fall 2024</h4>
+                                <ul>
+                                    <li>PHY131 - Introduction to Physics I</li>
+                                </ul>
+                            </section>                         
+                            <section id="OWinter-2024">
+                                <h4>Winter 2024</h4>
+                                <ul>
+                                    <li>MIE376 - Mathematical Programming (Optimization)</li>
+                                </ul>
+                            </section>
+                            <section id="OFall-2023">
+                                <h4>Fall 2023</h4>
+                                <ul>
+                                    <li>MIE365 - Operations Research III: Advanced OR</li>
+                                    <li>PHY136 - Introductory Physics I</li>
+                                </ul>
+                            </section>
+                            <section id="OSummer-2023">
+                                <h4>Summer 2023</h4>
+                                <ul>
+                                    <li>MATA33 - Calculus for Management II</li>
+                                </ul>
+                            </section>
+                            <section id="OWinter-2023">
+                                <h4>Winter 2023</h4>
+                                <ul>
+                                    <li>PHYA10 - Physics I for Physical Sciences</li>
+                                    <li>PHYB21 - Electricity and Magnetism</li>
+                                    <li>MATA32 - Calculus for Management I</li>
+                                    <li>MATA36 - Calculus II for Physical Sciences</li>
+                                </ul>
+                            </section>
+                            <section id="OFall-2022">
+                                <h4>Fall 2022</h4>
+                                <ul>
+                                    <li>MIE365 - Operations Research III: Advanced OR</li>
+                                    <li>MIE1050 - Design of Intelligent Sensor Networks</li>
+                                </ul>
+                            </section>
+                            <section id="OSummer-2022">
+                                <h4>Summer 2022</h4>
+                                <ul>
+                                    <li>PHY137 - Introductory Physics II</li>
+                                </ul>
+                            </section>
+                            <section id="OWinter-2022">
+                                <h4>Winter 2022</h4>
+                                <ul>
+                                    <li>MIE376 - Mathematical Programming (Optimization)</li>
+                                </ul>
+                            </section>
+                        </section>
+                        <section id="University of Tehran">
+                            <h3>University of Tehran</h3>
+                                <ul>
+                                    <li>Pattern Recognition</li>
+                                    <li>Engineering Probability and Statistics</li>
+                                    <li>Computer Networks</li>
+                                    <li>Electronics III</li>
+                                    <li>Electronics I</li>
+                                    <li>Microprocessor</li>
+                                    <li>Electrical Circuits II</li>
+                                </ul>
+                        </section>
+                    </section>
+                </section>
+                <div class="page__summary">
+                    <h2>On this page</h2>
+                    <ol>
+                        <li><a href="#ECE-dept">Dept. of Electrical and Computer Engineering</a>
+                            <!-- <ul>
+                                <li><a href="#EWinter-2026">Winter 2026</a></li>
+                                <li><a href="#EFall-2025">Fall 2025</a></li>
+                                <li><a href="#EWinter-2025">Winter 2025</a></li>
+                                <li><a href="#EFall-2024">Fall 2024</a></li>
+                                <li><a href="#EWinter-2024">Winter 2024</a></li>
+                                <li><a href="#EFall-2023">Fall 2023</a></li>
+                                <li><a href="#EFall-2022">Fall 2022</a></li>
+                                <li><a href="#ESummer-2022">Summer 2022</a></li>
+                                <li><a href="#EWinter-2022">Winter 2022</a></li>
+                                <li><a href="#EFall-2021">Fall 2021</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="#CS-dept">Dept. of Computer Science</a>
+                            <!-- <ul>
+                                <li><a href="#CWinter-2026">Winter 2026</a></li>
+                                <li><a href="#CFall-2025">Fall 2025</a></li>
+                                <li><a href="#CSummer-2025">Summer 2025</a></li>
+                                <li><a href="#CWinter-2025">Winter 2025</a></li>
+                                <li><a href="#CFall-2024">Fall 2024</a></li>
+                                <li><a href="#CSummer-2024">Summer 2024</a></li>
+                                <li><a href="#CWinter-2024">Winter 2024</a></li>
+                                <li><a href="#CFall-2023">Fall 2023</a></li>
+                                <li><a href="#CSummer-2023">Summer 2023</a></li>
+                                <li><a href="#CWinter-2023">Winter 2023</a></li>
+                                <li><a href="#CWinter-2022">Winter 2022</a></li>
+                                <li><a href="#CFall-2021">Fall 2021</a></li>
+                            </ul>                             -->
+                        </li>
+                        <li><a href="#Other-dept">Other Departments</a>
+                            <!-- <ul>
+                                <li><a href="#OWinter-2026">Winter 2026</a></li>
+                                <li><a href="#OFall-2025">Fall 2025</a></li>
+                                <li><a href="#OSummer-2025">Summer 2025</a></li>
+                                <li><a href="#OWinter-2025">Winter 2025</a></li>
+                                <li><a href="#OFall-2024">Fall 2024</a></li>
+                                <li><a href="#OWinter-2024">Winter 2024</a></li>
+                                <li><a href="#OFall-2023">Fall 2023</a></li>
+                                <li><a href="#OSummer-2023">Summer 2023</a></li>
+                                <li><a href="#OWinter-2023">Winter 2023</a></li>
+                                <li><a href="#OFall-2022">Fall 2022</a></li>
+                                <li><a href="#OSummer-2022">Summer 2022</a></li>
+                                <li><a href="#OWinter-2022">Winter 2022</a></li>
+                            </ul>                             -->
+                        </li>
+                        <li><a href="#University of Tehran">University of Tehran</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+    </div>
+    
+    <div class="page__footer">
+        <footer>
+            <div class="page__footer-copyright">
+                © 2026 Hossein Bijanrostami. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('.author__toggle');
+        if (!toggle) return;
+        toggle.addEventListener('click', function () {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+        });
+    });
+    </script>
+</body>
+</html>
